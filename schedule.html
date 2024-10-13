@@ -14,22 +14,87 @@
     
 </head>
 <body>
+    <div class="desktop-nav" >
     <nav style="background-color:  blueviolet; padding: 15px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
         <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
             <div style="font-size: 24px; color: white; font-weight: bold;">My Courses</div>
             <div>
-                <a href="#" style="color: white; padding: 10px 15px; text-decoration: none; transition: background-color 0.3s; border-radius: 5px;">Home</a>
-                <a href="#schedule" style="color: white; padding: 10px 15px; text-decoration: none; transition: background-color 0.3s; border-radius: 5px;">Course Schedule</a>
-                <a href="#catalog" style="color: white; padding: 10px 15px; text-decoration: none; transition: background-color 0.3s; border-radius: 5px;">Course Catalog</a>
-                <a href="#contact" style="color: white; padding: 10px 15px; text-decoration: none; transition: background-color 0.3s; border-radius: 5px;">Contact</a>
-                <a href="#resources" style="color: white; padding: 10px 15px; text-decoration: none; transition: background-color 0.3s; border-radius: 5px;">Resources</a>
+                <a class="a-links" href="#" style="color: white; padding: 10px 15px; text-decoration: none; transition: background-color 0.3s; border-radius: 5px;">Home</a>
+                <a class="a-links" href="#schedule" style="color: white; padding: 10px 15px; text-decoration: none; transition: background-color 0.3s; border-radius: 5px;">Course Schedule</a>
+                <a class="a-links" href="#catalog" style="color: white; padding: 10px 15px; text-decoration: none; transition: background-color 0.3s; border-radius: 5px;">Course Catalog</a>
+                <a class="a-links" href="#contact" style="color: white; padding: 10px 15px; text-decoration: none; transition: background-color 0.3s; border-radius: 5px;">Contact</a>
+                <a class="a-links" href="#resources" style="color: white; padding: 10px 15px; text-decoration: none; transition: background-color 0.3s; border-radius: 5px;">Resources</a>
             </div>
         </div>
     </nav>
+    </div>
     
-    <style>
-      
-    </style>
+    <div class="mobile-nav">
+        <nav style="background-color:  blueviolet; padding: 15px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);width: 100%;">
+            <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+                <div style="font-size: 24px; color: white; font-weight: bold;">My Courses</div>
+                <div>
+                    <button>
+                        <i class="fa-solid fa-bars fa-2x" style="color: white;" onclick="checked('menu2Toggle')"></i>
+
+                    </button>
+
+                    <input id="menu2Toggle" type="checkbox">
+                              <div class="page-wrapper">
+                                <div class="page-content">
+                              
+                                  
+                                </div>
+                    <div class="sidebar menu-2">
+                                  
+                        <div class="sidebar-dropdown" style="display: flex;justify-content: space-between;align-items: center;background-color: blueviolet;">
+  <span style="font-size: 24px;font-weight: bold;">My Courses</span>
+  <label class="menu-toggle menu-2-toggle" for="menu2Toggle" style="  
+                " onclick="uncheck()"><span class="close-label" style="padding: 0;"><i class="fa-solid fa-xmark" onclick="" style="font-size: 20px;margin-top: 4px;color: white;"></i></label>
+  
+                        </div>
+                        <div class="sidebar-categories-container">
+                 
+                            <a class="sidebar-categories">
+                                <b>Home</b> 
+                             </a> 
+                              </a>
+                              <a class="sidebar-categories">
+                                <b>Course Schedule</b> 
+                        </a> 
+                              </a>
+                              <a class="sidebar-categories">
+                                <b>Course Catalog</b> 
+                              </a> 
+                              </a>
+                              <a class="sidebar-categories">
+                                <b>Contact</b> 
+                                </a> 
+                              </a>
+                              <a class="sidebar-categories" style="border-bottom:none;">
+                                <b>Resources</b> 
+                                </a> 
+                              </a>
+                            
+              
+                
+                   
+              
+
+
+
+
+                        </div>
+                      
+                        
+                        </div>
+                    
+                   </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+   
     
     
     <div class="container">
@@ -39,17 +104,17 @@
         <div class="table-div">
             <table border="1" cellspacing="1" frame="void">
             <tr>
-<th class="thead" >Time</th>
-<th class="thead">Monday</th>
-<th class="thead">Tuesday</th>
-<th class="thead">Wednesday</th>
-<th class="thead">Thursday</th>
-<th class="thead">Friday</th>
+<th class="thead" style="text-align: center;">Time</th>
+<th class="thead" style="text-align: center;">Monday</th>
+<th class="thead" style="text-align: center;">Tuesday</th>
+<th class="thead" style="text-align: center;">Wednesday</th>
+<th class="thead" style="text-align: center;">Thursday</th>
+<th class="thead" style="text-align: center;">Friday</th>
 
 
             </tr>
             <tr>
-        <th class="thead" style="text-align: left;padding: 10px;">8:00 - 9:30</th>
+        <th class="thead">8:00 - 9:30</th>
 <td></td>
 <td></td>
 <td></td>
@@ -58,23 +123,23 @@
 
       </tr>
       <tr>
-        <th class="thead" style="text-align: left;padding: 10px;">9:30 - 11:00</th>
+        <th class="thead">9:30 - 11:00</th>
 <td></td>
-<td title="Dr. Ziad Eid" class="draw" style="word-spacing: 70px;" onclick="openCourseDetails()">CSC360</td>
+<td  class="draw"  onclick="openCourseDetails(3)"><div style="display: flex;justify-content: space-between;align-items: center;">CSC360 <i class="fas fa-chevron-down" style="font-size: 12px;color: blueviolet;padding-top: 5px;padding-right: 10px;"></i></div></td>
 <td></td>
-<td title="Dr. Ziad Eid" class="draw"  onclick="openCourseDetails()">CSC360</td>
+<td  class="draw" onclick="openCourseDetails(3)"><div style="display: flex;justify-content: space-between;align-items: center;">CSC360 <i class="fas fa-chevron-down" style="font-size: 12px;color: blueviolet;padding-top: 5px;padding-right: 10px;"></i></div></td>
 <td></td>
 
       </tr>
-      <th class="thead" style="text-align: left;padding: 10px;">11:00 - 12:30</th>
+      <th class="thead">11:00 - 12:30</th>
       <td></td>
-      <td title="Dr. Maroun " class="draw"  onclick="openCourseDetails()">CSC320</td>
+      <td title="Dr. Maroun " class="draw"  onclick="openCourseDetails(1)"><div style="display: flex;justify-content: space-between;align-items: center;">CSC320 <i class="fas fa-chevron-down" style="font-size: 12px;color: blueviolet;padding-top: 5px;padding-right: 10px;"></i></div></td>
       <td></td>
-      <td class="draw"  onclick="openCourseDetails()">CSC320</td>
+      <td class="draw" onclick="openCourseDetails(1)"><div style="display: flex;justify-content: space-between;align-items: center;">CSC320 <i class="fas fa-chevron-down" style="font-size: 12px;color: blueviolet;padding-top: 5px;padding-right: 10px;"></i></div></td>
       <td></td>
       
             </tr>
-            <th class="thead" style="text-align: left;padding: 10px;">12:30 - 2:00</th>
+            <th class="thead">12:30 - 2:00</th>
             <td></td>
             <td></td>
             <td></td>
@@ -82,15 +147,15 @@
             <td></td>
             
                   </tr>
-                  <th class="thead" style="text-align: left;padding: 10px;" >2:00 - 3:30</th>
+                  <th class="thead" >2:00 - 3:30</th>
                   <td></td>
-                  <td class="draw"  onclick="openCourseDetails()">STA320</td>
+                  <td class="draw" onclick="openCourseDetails(4)"><div style="display: flex;justify-content: space-between;align-items: center;">STA320 <i class="fas fa-chevron-down" style="font-size: 12px;color: blueviolet;padding-top: 5px;padding-right: 10px;"></i></div></td>
                   <td></td>
-                  <td class="draw"  onclick="openCourseDetails()">STA320</td>
+                  <td class="draw" onclick="openCourseDetails(4)"><div style="display: flex;justify-content: space-between;align-items: center;">STA320 <i class="fas fa-chevron-down" style="font-size: 12px;color: blueviolet;padding-top: 5px;padding-right: 10px;"></i></div></td>
                   <td></td>
                   
                         </tr>
-                        <th class="thead" style="text-align: left;padding: 10px;">3:30 - 5:00</th>
+                        <th class="thead">3:30 - 5:00</th>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -98,19 +163,19 @@
                         <td></td>
                         
                               </tr>
-                              <th class="thead" style="text-align: left;padding: 10px;">5:00 - 6:30</th>
+                              <th class="thead">5:00 - 6:30</th>
                               <td></td>
-                              <td class="draw"  onclick="openCourseDetails()">GEHU225</td>
+                              <td class="draw"  onclick="openCourseDetails(5)"><div style="display: flex;justify-content: space-between;align-items: center;">GEHU225 <i class="fas fa-chevron-down" style="font-size: 12px;color: blueviolet;padding-top: 5px;padding-right: 12px;"></i></div></td>
                               <td></td>
-                              <td class="draw"  onclick="openCourseDetails()">GEHU225</td>
+                              <td class="draw"  onclick="openCourseDetails(5)"><div style="display: flex;justify-content: space-between;align-items: center;">GEHU225 <i class="fas fa-chevron-down" style="font-size: 12px;color: blueviolet;padding-top: 5px;padding-right: 12px;"></i></div></td>
                               <td></td>
                               
                                     </tr>
-                                    <th class="thead" style="text-align: left;padding: 10px;">6:30 - 8:00</th>
+                                    <th class="thead" >6:30 - 8:00</th>
                                     <td></td>
-                                    <td class="draw"  onclick="openCourseDetails()">CSC352</td>
+                                    <td class="draw"  onclick="openCourseDetails(2)"><div style="display: flex;justify-content: space-between;align-items: center;">CSC352 <i class="fas fa-chevron-down" style="font-size: 12px;color: blueviolet;padding-top: 5px;padding-right: 10px;"></i></div></td>
                                     <td></td>
-                                    <td class="draw"  onclick="openCourseDetails()">CSC352</td>
+                                    <td class="draw"  onclick="openCourseDetails(2)"><div style="display: flex;justify-content: space-between;align-items: center;">CSC352 <i class="fas fa-chevron-down" style="font-size: 12px;color: blueviolet;padding-top: 5px;padding-right: 10px;"></i></div></td>
                                     <td></td>
                                     
                                           </tr>
@@ -145,142 +210,8 @@
     <div name="attribute" class="attributes" style="border-radius: 0px 0px 0px 5px;border: none;" id="Ca" onclick="clickCategories('Ca')">&nbsp;&nbsp;Catalog</div>
 
 </div>
-<div class="info-div">
-<div style="padding: 15px;font-size: 13.5px;
-color: whitesmoke;
-line-height: 23px;">
+<div class="info-div" id="info-div">
 
-<div id="first" class="hidden">
-    <font style="font-weight: 600;color:white">Asscociated Term: </font>Fall 2024-2025<br>
-    <font style="font-weight: 600;color:white">CRN: </font>12696<br>
-    <font style="font-weight: 600;color:white">Campus: </font>Kaslik<br>
-    <font style="font-weight: 600;color:white">Schedule Type: </font>Course<br>
-    <font style="font-weight: 600;color:white">Instructional Method: </font>Traditionnel<br>
-    <font style="font-weight: 600;color:white">Section Number: </font>E01<br>
-    <font style="font-weight: 600;color:white">Subject: </font>Computer Science / CSC<br>
-    <font style="font-weight: 600;color:white">Course Number: </font>360<br>
-    <font style="font-weight: 600;color:white">Title: </font>Internet Technology<br>
-    <font style="font-weight: 600;color:white">Credit Hours: </font>3<br>
-    <font style="font-weight: 600;color:white">Grade Mode: </font>Numeric<br></div>
-
-
-    <div id="second" class="hidden"> 
-
-    <font style="font-weight: 600;color:white;">Section Information Text:  </font><br><br>
-    This course focuses on the broad range of technologies used to build Internet and Web-based applications. We emphasize on developing client-side applications using XHTML, CSS, JavaScript, Dynamic HTML, XML and DTD.
-</div>
-   <div id="third" class="hidden">
-No Syllabus Information Available
-</div>
-<div id="fourth" class="hidden">
-Minor-Web & Mobile Programming MWMP<br>
-Sciences C1 XSGD<br>
-Sciences C1 YSGD<br>
-Sciences C1 ZSGD
-</div>
-<div id="fifth" class="hidden">
-
-
-<font style="font-weight: 600;color:white;"><i class="fa-solid fa-circle-info" style="color: blueviolet;"></i>&nbsp;&nbsp;Not All Restrictions Are Applicable.</font><br><br>
-<font style="font-weight: 600;color:white;">Must be enrolled in one of the following Levels:</font><br>
-<span style="padding-left:10px;">Undergraduate (C1)</span>
-<br><br>
-<font style="font-weight: 600;color:white;">Must be enrolled in one of the following Campuses:</font><br>
-<span style="padding-left:10px;">Kaslik (KA)</span>
-<br><br>
-<font style="font-weight: 600;color:white;">Must be enrolled in one of the following Fields of Study (Major, Minor or Concentration):</font><br>
-<div style="line-height: 19px;">
-<span style="padding-left:10px;">- Computer Science (CSC)</span><br>
-<span style="padding-left:10px;">- Computer Science (INF)</span><br>
-<span style="padding-left:10px;">- Computer Science (INFA)</span><br>
-<span style="padding-left:10px;">- Information Technology (INTA)</span><br>
-<span style="padding-left:10px;">- Information Technology (TIN)</span><br>
-<span style="padding-left:10px;">- Information Technology (TINA)</span><br>
-<span style="padding-left:10px;">- Web and Mobile Programming (WMP)</span></div>
-
-
-</div>
-<div id="sixth" class="hidden">
-<font style="font-weight: 600;color:white;">Instructor: </font>Ziad Charbel Eid<br>
-<font style="font-weight: 600;color:white;">Location: </font>Kaslik Campus | Bloc B | Room 104<br>
-<font style="font-weight: 600;color:white;">Type: </font>Class<br>
-<font style="font-weight: 600;color:white;">'Start - End' Date: </font>&nbsp;<span style="font-size: 12.7px;">09/02/2024 - 12/06/2024</span><br>
-<font style="font-weight: 600;color:white;">Class Day: </font>
-<div class="class-day">
-    <div class="day"><span>S</span></div>
-    <div class="day"><span>M</span></div>
-    <div class="day" style="background-color: blueviolet;"><span>T</span></div>
-    <div class="day"><span>W</span></div>
-    <div class="day" style="background-color: blueviolet;"><span>T</span></div>
-    <div class="day"><span>F</span></div>
-    <div class="day"><span>S</span></div>
-</div>
-<div style="margin-top: 5px;">
-<font style="font-weight: 600;color:white;">Time: </font><span style="font-size: 12.7px;">&nbsp;9:30 AM - 10:45 AM</span><br>
-</div>
-</div>
-
-
-
-<div id="seventh" class="hidden">
-<font style="font-weight: 600;color:white;">Enrollement Actual: </font>21<br>
-<font style="font-weight: 600;color:white;">Enrollment Maximum: </font>25<br>
-<font style="font-weight: 600;color:white;">Enrollment Seats Available: </font>4<br>
-<hr>
-<font style="font-weight: 600;color:white;">Waitlist Capacity: </font>0<br>
-<font style="font-weight: 600;color:white;">Waitlist Actual </font>0<br>
-<font style="font-weight: 600;color:white;">Waitlist Seats Available: </font>0<br>
-</div>
-
-
-<div id="eight" class="hidden">
-
-<font style="font-weight: 600;color:white;">Corequisites:</font><br><br>
-<span style="padding-left: 10px;">No corequisite course information available.</span>
-</div>
-
-
-
-<div id="nineth" class="hidden">
-<font style="font-weight: 600;color:white;">Catalog Prerequisites:</font><br><br>
-<span style="padding-left: 10px;">Not available.</span>
-</div>
-
-
-
-<div id="tenth" class="hidden">
-No linked course information available.
-</div>
-
-
-
-
-<div id="eleventh" class="hidden">
-<font style="font-weight: 600;color:white;">Title: </font>Internet Technology<br>
-<font style="font-weight: 600;color:white;">College: </font>Arts & Sciences AS<br>
-<font style="font-weight: 600;color:white;">Department: </font>Computer Sc. & Information Tech CSIT<br>
-<font style="font-weight: 600;color:white;">Hours:</font><br>
-<div style="line-height: 17px;">
-Credit Hours: 3<br>
-Lecture: 3</div>
-<br>
-<font style="font-weight: 600;color:white;">Levels: </font>Undergraduate C1<br>
-<font style="font-weight: 600;color:white;">Grading Modes: </font>Numeric N<br>
-<font style="font-weight: 600;color:white;">Schedule Types: </font>Course C<br><br>
-<font style="font-weight: 600;color:white;">Attributes: </font><br>
-<div style="line-height: 19px;">
-    Minor-Web & Mobile Programming MWMP<br>
-    Sciences C1 XSGD<br>
-    Sciences C1 YSGD<br>
-    Sciences C1 ZSGD
-
-</div>
-</div>
-
-
-
-
-</div>
 
 </div>
 
@@ -295,8 +226,10 @@ Lecture: 3</div>
 
 
     </div>
-     </div>
-         </div>
+</div>
+    </div>
+    <div class="desktop-footer">
+    <div >
     <footer style="background-color: blueviolet;width: 100%;height: 40px;display: flex;justify-content: space-between;align-items: center;">
 
         <div style="height: 100%;width: 25%;"><p style="color: white;text-align: left;padding-left: 30px;font-size: 14px;">Jason Mrad</p></div>
@@ -304,10 +237,34 @@ Lecture: 3</div>
         <div style="height: 100%;width: 25%;display: flex;justify-content: flex-end;align-items: center;color: white;padding-right: 30px;"><i class="fa-brands fa-instagram" style="padding-right: 10px;"></i><i class="fa-brands fa-x-twitter" style="padding-right: 10px;"></i><i class="fa-brands fa-facebook"></i></div>
 
         
-    </footer>
+    </footer></div></div>
+    
+    <div class="mobile-footer">
+    <footer style="background-color: blueviolet; width: 100%;box-sizing:border-box; padding: 15px 30px; display: flex; flex-direction: column; align-items: center; color: white;font-size: 13px;">
+    <div style="text-align: center; margin-bottom: 10px;">
+        <p style="margin: 0;">&copy; 2024 Jason Mrad. All Rights Reserved.</p>
+    </div>
+    <div style="margin-bottom: 10px;">
+        <p style="margin: 0;">Contact: <a href="mailto:your-email@example.com" style="color: white; text-decoration: underline;">jason.mrad@net.usek.edu.lb</a></p>
+    </div>
+    <div style="display: flex; justify-content: center; gap: 15px;">
+        <a href="https://www.instagram.com/yourprofile" target="_blank" aria-label="Instagram" style="color: white;">
+            <i class="fa-brands fa-instagram" style="font-size: 20px;"></i>
+        </a>
+        <a href="https://twitter.com/yourprofile" target="_blank" aria-label="Twitter" style="color: white;">
+            <i class="fa-brands fa-twitter" style="font-size: 20px;"></i>
+        </a>
+        <a href="https://www.facebook.com/yourprofile" target="_blank" aria-label="Facebook" style="color: white;">
+            <i class="fa-brands fa-facebook" style="font-size: 20px;"></i>
+        </a>
+    </div>
+</footer>
+
+    </div>
+    
     
 <style>
-    
+
 body {
     font-family: "Outfit",sans-serif;
     background-color: black;
@@ -321,8 +278,8 @@ body {
     margin: 50px auto;
     padding: 20px;
     background-color: #1A1A1A;
-    height: 400px;
-    height: auto;
+    height: 625px;
+  
     border-radius: 5px;
  
 }
@@ -350,6 +307,8 @@ th{
 }
 .thead{
     color: white;
+    text-align: left;
+    padding: 10px;
 
 }
 tbody tr:nth-child(odd) {
@@ -371,6 +330,7 @@ td{
     color: white;
    width: 12.5%;
    height: 40px;
+   max-height: 40px;
    padding: 10px;
  
    transition: all 0.2s ease;
@@ -390,7 +350,7 @@ footer{
 }
 /* Anchor tag styles */
 /* Anchor tag styles */
-a {
+.a-links {
     text-decoration: none; /* Remove default underline */
     color: blueviolet; /* Set your desired text color */
     position: relative; /* Needed for pseudo-element positioning */
@@ -400,7 +360,7 @@ a {
 }
 
 /* Add a pseudo-element for the underline */
-a::after {
+.a-links::after {
     content: '';
     position: absolute;
     left: 0; /* Start from the left edge */
@@ -413,7 +373,7 @@ a::after {
 }
 
 /* Hover effect for the anchor tags */
-a:hover::after {
+.a-links:hover::after {
     transform: scaleX(0.9); /* Expand to full width */
 }
 
@@ -441,47 +401,49 @@ td::before, td::after {
 }
 
 .draw {
-    position: relative;
-  transition: color 0.25s;
-}
-.draw:hover{
-    color: blueviolet;
-    
-}
-.draw::before, .draw::after {
-  border: 2px solid transparent;
-  width: 0;
-  height: 0;
+  position: relative;
+  cursor: pointer;
+  
 }
 
+/* Default state of borders (no hover) */
+.draw::before, .draw::after {
+border: 2px solid transparent;
+width: 0;
+height: 0;
+position: absolute;
+content: "";
+}
+
+/* Position the borders at corners */
 .draw::before {
-  top: 0;
-  left: 0;
+top: 0;
+left: 0;
 }
 
 .draw::after {
-  bottom: 0;
-  right: 0;
+bottom: 0;
+right: 0;
 }
 
-
-
+/* Hover state for border animation */
 .draw:hover::before, .draw:hover::after {
-  width: 100%;
-  height: 100%;
+width: 100%;
+height: 100%;
 }
 
+/* Faster animation on top-right corner */
 .draw:hover::before {
-  border-top-color: blueviolet;
-  border-right-color: blueviolet;
-  
-  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+border-top-color: blueviolet;
+border-right-color: blueviolet;
+transition: width 0.22s ease-out, height 0.22s ease-out 0.22s; /* Slightly faster */
 }
 
+/* Faster animation on bottom-left corner */
 .draw:hover::after {
-  border-bottom-color: blueviolet;
-  border-left-color: blueviolet;
-  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+border-bottom-color: blueviolet;
+border-left-color: blueviolet;
+transition: border-color 0s ease-out 0.42s, width 0.22s ease-out 0.42s, height 0.22s ease-out 0.62s; /* Slightly faster */
 }
 
 .arrow:hover{
@@ -614,9 +576,310 @@ body.no-scroll{
     opacity: 1; /* Fully visible */
     transform: translateY(0); /* Slide to its final position */
   }
+  .arrow-down{
+    display: none;
+  }
+  .fade-in {
+    opacity: 1;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    visibility: visible; /* Make it visible for transition */
+}
+
+.fade-out {
+    opacity: 0;
+    visibility: hidden; /* Hide it when opacity is 0 */
+}
+.mobile-nav{
+    display: none;
+}
+.mobile-footer{
+display: none;
+}
+
+@media (max-width: 950px)  {
+    .container{
+        height: 580px;
+    }
+    td,th{
+        font-size: 16px;
+        padding: 9px;
+        height: 35px;
+        overflow: hidden;
+    }
+    .thead{
+        padding: 9px;
+    }
+   
+
+
+}
+@media (max-width: 950px) and (min-width:700px) {
+    .container{
+        height: 580px;
+    }
+    td,th{
+        font-size: 15px;
+        padding: 8px;
+        height: 35px;
+        overflow: hidden;
+    }
+    .thead{
+        padding: 8px;
+    }
+   
+
+}
+@media (max-width: 700px) {
+    .mobile-nav{
+        display: flex;
+    }
+    .mobile-footer{
+    display: flex;
+    }
+    .desktop-nav{
+        display: none;
+    }
+    .desktop-footer{
+    display: none;
+    }
+
+    button{
+        background-color: transparent;
+        border: none;
+    }
+    .Schedule-header{
+        font-size: 30px;
+    }
+    .more-info-div{
+        width: 100%;
+      
+      }
+      .info-div{
+        overflow-y: scroll;
+
+      }
+      .info-div::-webkit-scrollbar {
+        display: none;
+      }
+
+      
+.page-wrapper {
+   
+    transition: 450ms;
+    z-index: 100;
+    display: flex;
+    justify-content: flex-start; /* Aligns content to the left when sidebar slides in */
+    }
+    
+    .page-content {
+    text-align: center;
+    transition: 450ms;
+    background-color: honeydew;
+    }
+   
+    .page-wrapper,.page-content{
+        display: block;
+      }
+     
+     .favorites-container{
+      width: 100vw;
+      height: 100vh;
+      box-sizing: border-box;
+     }
+     .sidebar {
+      width: 100vw;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      z-index: 5;
+      background-color: #1A1A1A;
+      color: white;
+      transition: 450ms;
+      }
+      
+    
+        
+  
+  
+  #menu1Toggle{
+    padding-top:15px;padding-right: 20px; 
+    display: none;
+  }
+  
+  
+  
+  
+        .sidebar.menu-2 {
+          left: -100vw; /* Initially hidden on the right */
+          right:  auto; /* Ensure it's not affected by left positioning */
+          }
+          
+          .menu-toggle.menu-2-toggle {
+          right: 25px; /* Position the toggle on the right */
+          left: auto; /* Ensure it's not affected by left positioning */
+          border-color: black;
+          color: black;
+          }
+          
+          .menu-toggle .menu-label {
+          display: block;
+          
+          }
+          
+          .menu-toggle .close-label {
+          display: none;
+          color: black;
+          padding-right: 20px;
+          }
+          
+          #menu2Toggle {
+          display: none;
+          
+          }
+          
+          #menu2Toggle:checked ~ .page-wrapper .sidebar.menu-2 {
+          left: 0; /* Slide the sidebar in from the right */
+          box-shadow: 0 0 15px #000;
+          }
+          
+          #menu2Toggle:checked ~ .page-wrapper .menu-toggle.menu-2-toggle {
+          right: 215px; /* Move the toggle to the right when the sidebar is open */
+          left: auto; /* Ensure it's not affected by left positioning */
+          }
+          
+          #menu2Toggle:checked ~ .page-wrapper .menu-toggle.menu-2-toggle .menu-label {
+          display: none;
+          
+          }
+          
+          #menu2Toggle:checked ~ .page-wrapper .menu-toggle.menu-2-toggle .close-label {
+          display: block;
+          
+          }
+  
+          .img-logo {
+            width: 47px;
+            height: 50px;
+            object-fit: scale-down;
+            margin: 0 0px;
+            padding-top: 5px;
+          }
+          
+          #nikelogo {
+            margin-top: 12px;
+            margin-left: 5px;
+            
+          }
+          
+          #adidaslogo {
+            height: 35px;
+            width: 35px;
+            margin-top: 5px;
+          }
+  .sidebar-dropdown{
+    box-sizing: border-box;
+    width: 100vw;
+    min-height: 9%;
+    padding: 15px;
+ 
+    display: flex;justify-content: space-between;
+
+   
+  
+  }
+  .slidebar-arrow{
+    color:black;transform: scaleX(0.9);transform: scaleY(0.9);
+  }
+  .sidebar-categories{
+    width: 100%;
+    background-color:;
+ 
+    box-sizing: border-box;
+    min-height: 60px;
+    padding-left:30px ;
+    padding-right: 18px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sidebar-categories:hover{
+    -webkit-tap-highlight-color: transparent; /* For WebKit browsers (like Chrome, Safari) */
+    background-color: rgb(230, 230, 230);
+  }
+  .sidebar-categories-container{
+    padding: 10px 0px 10px 0px;
+    border-bottom:1px solid #333  ;
+  }
+    
+  .categories-arrow{
+    color: #000;
+  }
+  .help-policy{
+    padding-top: 10px;
+  }
+  
+  
+    
+  
+}
+@media (max-width: 700px) and (min-width:610px) {
+    .container{
+        height: 540px;
+    }
+    td,th,.thead{
+        font-size: 13.5px;
+        padding: 7px;
+        height: 35px;
+        overflow: hidden;
+    }
+   
+   
+
+}
+@media (max-width: 610px) and (min-width:450px) {
+    .container{
+        height: 470px;
+    }
+    td,th,.thead{
+        font-size: 11.3px;
+        padding: 5px;
+        height: 30px;
+        overflow: hidden;
+    }
+   
+   
+
+}
+
+
+@media(max-width:450px){
+    .container{
+        height: 460px;
+    }
+    td,th,.thead{
+        font-size: 13px;
+        padding: 5px;
+        height: 30px;
+       
+        width: 90px;
+        
+    }
+    .table-div{
+        overflow-x: scroll;
+    }
+    .table-div::-webkit-scrollbar {
+        display: none; /* Hides the scrollbar in WebKit-based browsers (Chrome, Safari, etc.) */
+        }
+
+}
 </style>
-    <script>
+     <script>
         window.onload=clickCategories("CL");
+       
         function clickCategories(attributeID){
 
         let attribute=document.getElementById(attributeID);
@@ -681,9 +944,14 @@ document.getElementById(arrayOfIDs[j]).style.display="none";
         }
        
     </script>
+ 
+    
     <script>
 
-function openCourseDetails() {
+function openCourseDetails(id) {
+   
+    courseInfoGenerator(id);
+     clickCategories("CL");// this for when we open display is visible for the first categorie
   let moreInfoParent = document.getElementById("more-info-parent");
   let moreInfoDiv = document.getElementById("more-info-div");
 document.body.classList.add('no-scroll');
@@ -710,6 +978,500 @@ clickCategories("CL");
 
 }
     </script>
+
+<script>
+    const drawElements = document.querySelectorAll('.draw'); // Select all elements with the 'draw' class
+    let hoverTimeout;
+
+    drawElements.forEach(myDiv => {
+        const icon = myDiv.querySelector('i'); // Select the <i> icon directly inside the <td>
+        
+        // Initially hide the icon with fade-out classes
+        icon.classList.add('fade-out');
+
+        myDiv.addEventListener('mouseenter', () => {
+            hoverTimeout = setTimeout(() => {
+                myDiv.style.color = 'blueviolet'; // Change the text color after 0.81 seconds
+
+                if (icon) {
+                    icon.classList.remove('fade-out'); // Remove fade-out to show the icon
+                    icon.classList.add('fade-in'); // Add fade-in class to make it visible
+                }
+            }, 810); // 0.81 second delay
+        });
+
+        myDiv.addEventListener('mouseleave', () => {
+            clearTimeout(hoverTimeout); // Cancel if mouse leaves before 0.81 seconds
+            myDiv.style.color = 'white'; // Reset the text color to white
+
+            if (icon) {
+                icon.classList.remove('fade-in'); // Remove fade-in class
+                icon.classList.add('fade-out'); // Add fade-out class to hide the icon
+            }
+        });
+    });
+</script>
+  <script>
+    const commonInfo=[
+{
+term: "Fall 2024-2025",
+campus: "Kaslik",
+instructionalMethod: "Traditional",
+creditHours: 3,
+gradeMode: "Numeric",
+syllabus: "No syllabus information available.",
+startEndDate:"09/02/2024 - 12/06/2024",
+type:"Class",
+college:"Arts & Sciences AS",
+levels:"Undergraduate C1"
+
+}
+
+    ]
+    const courses = [
+        {//dbms
+            id:1,
+            crn: "12687",
+            scheduleType: "Course / Workshop",
+            sectionNumber: "E03",
+            subject: "Computer Science / CSC",
+            courseNumber: "320",
+            title: "Database Systems",
+            
+        
+            courseDesc:" This course is an introduction  to the basic concepts of object‐oriented programming. It  focuses on  the concepts of  inheritance, polymorphism, and exception handling. It enables students to acquire a good knowledge in the concepts  of  event‐driven  programming  and  the  Windows  environment.  Topics  include  applications  to  databases,  new  technologies of XML, SQL, and ADO. NET ",
+
+            attribute1:"Sciences C1 XSGD",
+            attribute2:"Sciences C1 YSGD",
+            attribute3:"Sciences C1 ZSGD",
+            attribute4:"",
+
+            enrolled1:"Computer Science (CSC)",
+            enrolled2:"Computer Science (INF)",
+            enrolled3:"Computer Science (INFA)",
+            enrolled4:"Information Technology (TIN)",
+            enrolled5:"Information Technology (TINA",
+            enrolled6:"",
+            enrolled7:"",
+            
+            instructor: "Mr. Maroun Elias Abi Assaf",
+            location: "Kaslik Campus | Bloc H | Room 306",
+            time: "11:00 AM - 12:40 PM",
+
+            enrollmentActual: 18,
+            enrollmentMax: 28,
+            enrollmentAvailable: 10,
+            //waitlist keln 0
+
+            department:"Computer Sc. & Information Tech CSIT",
+            lecture:2,
+            lab:"Lab: 2",
+            
+            scheduleType1: "Course / Workshop CTP",
+            // Add other properties as needed
+        },
+           {//Theory
+            id:2,
+            crn: "12694",
+            scheduleType: "Course",
+           
+
+            sectionNumber: "E02",
+            subject: "Computer Science / CSC",
+            courseNumber: "352",
+            title: "Theory Of Programming Languages",
+            
+        
+            courseDesc:"In this course we explore the major issues in both design and implementation of modern programming languages and provide a basic introduction to the underlying theoretical models on which these languages are based. The emphasis is on fundamental concepts. Several languages are highlighted in sufficient detail to enable the programmers to write programs that illustrate the relationship between a source program and its execution behavior.",
+
+            attribute1:"Sciences C1 XSGD",
+            attribute2:"Sciences C1 YSGD",
+            attribute3:"Sciences C1 ZSGD",
+            attribute4:"",
+
+            enrolled1:"Computer Science (CSC)",
+            enrolled2:"Computer Science (INF)",
+            enrolled3:"Computer Science (INFA)",
+            enrolled4:"Information Technology (TIN)",
+            enrolled5:"Information Technology (TINA",
+            enrolled6:"",
+            enrolled7:"",
+            
+            instructor: "Ing. Antoine Mouawad Aoun",
+            location: "Kaslik Campus | Bloc B | Room 006",
+            time: "06:30 PM - 07:45 PM",
+
+            enrollmentActual: 28,
+            enrollmentMax: 32,
+            enrollmentAvailable: 4,
+            //waitlist keln 0
+
+            department:"Computer Sc. & Information Tech CSIT",
+            lecture:3,
+            lab:'',
+            
+            scheduleType1: "Course C",
+            // Add other properties as needed
+        },
+          {//CSC360
+            id:3,
+            crn: "12696",
+            scheduleType: "Course",
+            sectionNumber: "E01",
+            subject: "Computer Science / CSC",
+            courseNumber: "360",
+            title: "Internet Technology",
+            
+        
+            courseDesc:"This course focuses on the broad range of technologies used to build Internet and Web-based applications. We emphasize on developing client-side applications using XHTML, CSS, JavaScript, Dynamic HTML, XML and DTD.",
+
+            attribute1:"Sciences C1 XSGD",
+            attribute2:"Sciences C1 YSGD",
+            attribute3:"Sciences C1 ZSGD",
+            attribute4:"Minor-Web & Mobile Programming MWMP",
+
+            enrolled1:"Computer Science (CSC)",
+            enrolled2:"Information Technology (TIN)",
+            enrolled3:"Information Technology (TINA)",
+            enrolled4:"Computer Science (INF)",
+            enrolled5:"Computer Science (INFA)",
+            enrolled6:"Information Technology (INTA)",
+            enrolled7:"Web and Mobile Programming (WMP)",
+            
+            instructor: "Dr. Ziad Charbel Eid",
+            location: "Kaslik Campus | Bloc B | Room 104",
+            time: "09:30 AM - 10:45 AM",
+
+            enrollmentActual: 21,
+            enrollmentMax: 25,
+            enrollmentAvailable: 4,
+            //waitlist keln 0
+
+            department:"Computer Sc. & Information Tech CSIT",
+            lecture:3,
+            lab:'',
+            
+            scheduleType1: "Course C",
+            // Add other properties as needed
+        },
+        {//STA
+            id:4,
+            crn: "11099",
+            scheduleType: "Course / Workshop",
+            sectionNumber: "E01",
+            subject: "Statistics / STA",
+            courseNumber: "320",
+            title: "Probability And Statistics",
+            
+        
+            courseDesc:"This course aims to provide students with the most common concepts of probability theory and statistical inference, with a unique balance between theory and methodology. The course starts with a general overview of the main descriptive statistics’ practices; the probability theory will then be developed, Random variables will be introduced, their probability distributions and their main properties will be thoroughly studied. Both single variable distributions and joint distributions will be considered. A special focus will be given on the study of several discrete and continuous common distributions with an emphasis on their moments’ generating functions and their applications. Distributions of sums of random variables will be studied and the Central Limit Theorem will be introduced. The last part of this course will be dedicated to inferential statistics where confidence intervals and different types of hypotheses testing will be presented and performed. Students will also have the opportunity to deal with some statistical tools and software packages such as Excel, StatCrunch and/or SPSS. Interesting and relevant applications to different fields of science and engineering will be a focus of this course, as this course is designed to meet the needs of students in these disciplines.",
+
+            attribute1:"Sciences C1 XSGD",
+            attribute2:"Sciences C1 YSGD",
+            attribute3:"Sciences C1 ZSGD",
+            attribute4:"Minor-Actuarial Studies MACS",
+//eng kmna
+            enrolled1:"No Restrictons.",
+            enrolled2:"",
+            enrolled3:"",
+            enrolled4:"",
+            enrolled5:"",
+            enrolled6:"",
+            enrolled7:"",
+            
+            instructor: "Dr.  Rabih Nemer Assaf",
+            location: "Kaslik Campus | Bloc C | Room 006",
+            time: "02:00 PM - 03:40 PM",
+
+            enrollmentActual: 32,
+            enrollmentMax: 35,
+            enrollmentAvailable: 3,
+            //waitlist keln 0
+
+            department:"Mathematics MATH",
+            lecture:3,
+            lab:"Lab: 2",
+            scheduleType1: "Course / Workshop CTP",
+            
+            // Add other properties as needed
+        },
+           {//GEHU
+            id:5,
+            crn: "12539",
+            scheduleType: "Course",
+            sectionNumber: "E01",
+            subject: "Humanities, Ethics & Civil.",
+            courseNumber: "225",
+            title: "Philosophical Journey Through Arts",
+            
+        
+            courseDesc:"Explore the rich interplay between philosophy and art, delving into timeless questions about beauty, representation, and meaning. Examine influential philosophical theories and their impact on various art movements, from ancient to contemporary, to deepen your understanding of artistic expression and its philosophical significance.",
+
+            attribute1:"General Education XGEA",
+            attribute2:"General Education YGEA",
+            attribute3:"General Education ZGEA",
+            attribute4:"Humanities, Ethics & Civil. GEHU",
+//eng kmna
+            enrolled1:"No Restrictions.",
+            enrolled2:"",
+            enrolled3:"",
+            enrolled4:"",
+            enrolled5:"",
+            enrolled6:"",
+            enrolled7:"",
+            
+            instructor: "Ms. Samar Naim El Hajj",
+            location: "Kaslik Campus | Bloc H | Room 315",
+            time: "02:00 PM - 03:40 PM",
+
+            enrollmentActual: 32,
+            enrollmentMax: 32,
+            enrollmentAvailable: 0,
+            //waitlist keln 0
+
+            department:"General Education GE",
+            lecture:3,
+            lab:'',
+            scheduleType1: "Course C",
+            
+            // Add other properties as needed
+        },
+        // Add more course objects here...
+    ];
+
+    function getCourseByIdLoop(courseId) {
+    for (let i = 0; i < courses.length; i++) {
+        if (courses[i].id === courseId) {
+            return courses[i]; // Return the matching course
+        }
+    }
+    return null; // If no course is found
+}
+
+
+function courseInfoGenerator(courseId){
+
+const course=getCourseByIdLoop(courseId);
+const commonCourse=commonInfo[0];
+
+let infoDiv=document.getElementById("info-div");
+
+infoDiv.innerHTML=`
+<div style="padding: 15px;font-size: 13.5px;
+color: whitesmoke;
+line-height: 23px;">
+
+<div id="first" class="hidden">
+    <font style="font-weight: 600;color:white">Asscociated Term: </font>${commonCourse.term}<br>
+    <font style="font-weight: 600;color:white">CRN: </font>${course.crn}<br>
+    <font style="font-weight: 600;color:white">Campus: </font>${commonCourse.campus}<br>
+    <font style="font-weight: 600;color:white">Schedule Type: </font>${course.scheduleType}<br>
+    <font style="font-weight: 600;color:white">Instructional Method: </font>${commonCourse.instructionalMethod}<br>
+    <font style="font-weight: 600;color:white">Section Number: </font>${course.sectionNumber}<br>
+    <font style="font-weight: 600;color:white">Subject: </font>${course.subject}<br>
+    <font style="font-weight: 600;color:white">Course Number: </font>${course.courseNumber}<br>
+    <font style="font-weight: 600;color:white">Title: </font>${course.title}<br>
+    <font style="font-weight: 600;color:white">Credit Hours: </font>${commonCourse.creditHours}<br>
+    <font style="font-weight: 600;color:white">Grade Mode: </font>${commonCourse.gradeMode}<br></div>
+
+
+    <div id="second" class="hidden"> 
+
+    <font style="font-weight: 600;color:white;">Section Information Text:  </font><br><br>
+   <div id='cDescription'> ${course.courseDesc}</div>
+</div>
+   <div id="third" class="hidden">
+No Syllabus Information Available
+</div>
+<div id="fourth" class="hidden">
+${course.attribute1}<br>
+${course.attribute2}<br>
+${course.attribute3}<br>
+${course.attribute4}
+</div>
+<div id="fifth" class="hidden">
+
+
+<font style="font-weight: 600;color:white;"><i class="fa-solid fa-circle-info" style="color: blueviolet;"></i>&nbsp;&nbsp;Not All Restrictions Are Applicable.</font><br><br>
+<font style="font-weight: 600;color:white;">Must be enrolled in one of the following Levels:</font><br>
+<span style="padding-left:10px;">Undergraduate (C1)</span>
+<br><br>
+<font style="font-weight: 600;color:white;">Must be enrolled in one of the following Campuses:</font><br>
+<span style="padding-left:10px;">Kaslik (KA)</span>
+<br><br>
+<font style="font-weight: 600;color:white;">Must be enrolled in one of the following Fields of Study (Major, Minor or Concentration):</font><br>
+<div style="line-height: 19px;" id="enrolled-div">
+
+
+    </div>
+
+
+</div>
+<div id="sixth" class="hidden">
+<font style="font-weight: 600;color:white;">Instructor: </font>${course.instructor}<br>
+<font style="font-weight: 600;color:white;">Location: </font>${course.location}<br>
+<font style="font-weight: 600;color:white;">Type: </font>${commonCourse.type}<br>
+<font style="font-weight: 600;color:white;">'Start - End' Date: </font>&nbsp;<span style="font-size: 12.7px;">${commonCourse.startEndDate}</span><br>
+<font style="font-weight: 600;color:white;">Class Day: </font>
+<div class="class-day">
+    <div class="day"><span>S</span></div>
+    <div class="day"><span>M</span></div>
+    <div class="day" style="background-color: blueviolet;"><span>T</span></div>
+    <div class="day"><span>W</span></div>
+    <div class="day" style="background-color: blueviolet;"><span>T</span></div>
+    <div class="day"><span>F</span></div>
+    <div class="day"><span>S</span></div>
+</div>
+<div style="margin-top: 5px;">
+<font style="font-weight: 600;color:white;">Time: </font><span style="font-size: 12.7px;">&nbsp;${course.time}</span><br>
+</div>
+</div>
+
+
+
+<div id="seventh" class="hidden">
+<font style="font-weight: 600;color:white;">Enrollement Actual: </font>${course.enrollmentActual}<br>
+<font style="font-weight: 600;color:white;">Enrollment Maximum: </font>${course.enrollmentMax}<br>
+<font style="font-weight: 600;color:white;">Enrollment Seats Available: </font>${course.enrollmentAvailable}<br>
+<hr>
+<font style="font-weight: 600;color:white;">Waitlist Capacity: </font>0<br>
+<font style="font-weight: 600;color:white;">Waitlist Actual </font>0<br>
+<font style="font-weight: 600;color:white;">Waitlist Seats Available: </font>0<br>
+</div>
+
+
+<div id="eight" class="hidden">
+
+<font style="font-weight: 600;color:white;">Corequisites:</font><br><br>
+<span style="padding-left: 10px;">No corequisite course information available.</span>
+</div>
+
+
+
+<div id="nineth" class="hidden">
+<font style="font-weight: 600;color:white;">Catalog Prerequisites:</font><br><br>
+<span style="padding-left: 10px;">Not available.</span>
+</div>
+
+
+
+<div id="tenth" class="hidden">
+No linked course information available.
+</div>
+
+
+
+
+<div id="eleventh" class="hidden">
+<font style="font-weight: 600;color:white;">Title: </font>${course.title}<br>
+<font style="font-weight: 600;color:white;">College: </font>${commonCourse.college}<br>
+<font style="font-weight: 600;color:white;">Department: </font>${course.department}<br>
+<font style="font-weight: 600;color:white;">Hours:</font><br>
+<div style="line-height: 17px;">
+Credit Hours: ${commonCourse.creditHours}<br>
+Lecture: ${course.lecture}<br>
+${course.lab}
+</div>
+<br>
+<font style="font-weight: 600;color:white;">Levels: </font>${commonCourse.levels}<br>
+<font style="font-weight: 600;color:white;">Grading Modes: </font>${commonCourse.gradeMode} N<br>
+<font style="font-weight: 600;color:white;">Schedule Types: </font>${course.scheduleType1}<br><br>
+<font style="font-weight: 600;color:white;">Attributes: </font><br>
+<div style="line-height: 19px;">
+${course.attribute1}<br>
+    ${course.attribute2}<br>
+    ${course.attribute3}<br>
+    ${course.attribute4}
+
+</div>
+</div>
+</div>
+
+`;
+//forrr the - before attributes if they have none
+let enrolledDiv=document.getElementById("enrolled-div");
+let content='';
+const enrolledArray=[course.enrolled1,course.enrolled2,course.enrolled3,course.enrolled4,course.enrolled5,course.enrolled6,course.enrolled7,];
+for(let i=0;i<enrolledArray.length;i++){
+    if(enrolledArray[i]==''){
+        break;
+    }
+    content+="<span style='padding-left:10px;'>- "+enrolledArray[i]+"</span><br>";
+    
+}
+
+enrolledDiv.innerHTML=content;
+
+//for the desc of STA320 since too much text
+//with span not work line height with div it worked
+if(course.id==4){
+document.getElementById("cDescription").style.lineHeight="17px";
+document.getElementById("cDescription").style.fontSize="12.5px";
+
+}
+else{
+    document.getElementById("cDescription").style.fontSize="13.5px";
+    
+document.getElementById("cDescription").style.lineHeight="23px";
+}
+
+
+}
+
+//for course details long words
+
+function changeAttributeBasedOnWidth() {
+            // Check if window width is less than 700px
+            if (window.innerWidth < 530) {
+                document.getElementById("I/M").innerHTML = "&nbsp;&nbsp;Inst./Meeting";
+                document.getElementById("E/W").innerHTML = "&nbsp;&nbsp;Enroll/Waitlist";
+
+            } else {
+                document.getElementById("I/M").innerHTML = "&nbsp;&nbsp;Instructor/Meeting Times";
+                document.getElementById("E/W").innerHTML = "&nbsp;&nbsp;Enrollement/Waitlist";
+                
+
+            }
+
+            if (window.innerWidth < 400) {
+                document.getElementById("CD").innerHTML = "&nbsp;&nbsp;Course Desc.";
+
+        }
+        else{
+            document.getElementById("CD").innerHTML = "&nbsp;&nbsp;Course Description";
+        }
+    }
+        // Call the function on page load
+        changeAttributeBasedOnWidth();
+
+        // Call the function whenever the window is resized
+        window.addEventListener("resize", changeAttributeBasedOnWidth);
+  </script>
+
+
+<script>
+
+
+function checked(checker){
+    
+ 
+      let checkbox=document.getElementById(checker);
+      let body=document.body;
+      checkbox.checked=true;
+
+  
+    }
+    function uncheck(){
+  
+    let body=document.body;
+
+    body.style.overflowY="scroll";
+   
+   
+  
+    }
+  
+</script>
 </body>
 
 
