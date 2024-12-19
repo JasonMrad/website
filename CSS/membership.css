@@ -1,11 +1,14 @@
 
 
-#membership-text b{
+#membership-text{
     margin-top: 42px;
     margin-left: 42px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
   }
+#membership-text b{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
   .membership{
     margin-top: -18px;
     height: 150px;
