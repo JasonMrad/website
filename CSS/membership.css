@@ -1,6 +1,6 @@
 
 
-#membership-text{
+#membership-text b{
     margin-top: 42px;
     margin-left: 42px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,7 +15,8 @@
     display: flex;
     justify-content: space-around;
     font-size: 32px;
-   
+           font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Shadow only at the bottom */
   }
   .membership-logos{
