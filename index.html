@@ -328,19 +328,22 @@
                 </div>
   
             <div class="search-buttons">
-              <form>
-                <div class="search">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
-                    <input class="search-input" type="search" placeholder="Search" >
-  
+            <div class="search-field">
+                    <img id="search-btn" 
+                         style="width: 20px; height: 25px; object-fit: scale-down;" 
+                         src="Icons/newSearch.svg">
+                    <input id="search" type="text" placeholder="Search" style="background-color: transparent;">
+                  </div>
                 </div>
-              </form>
-                 
                 
-              <button class="nav-button" aria-label="User"><i class="fa-regular fa-user fa-small-icon" ></i></button>
-              <button class="nav-button" aria-label="Favorites" onclick="checked('menu1Toggle')"><i class="fa-regular fa-heart"></i></button>
-              <button class="nav-button" aria-label="Shopping Cart"><i class="fa fa-shopping-cart fa-sm" aria-hidden="true" ></i></button>
-        
+              
+                
+             
+                
+              
+          <a><img    style="width: 30px;height: 25px;object-fit: scale-down;margin-right: 3px;" src="Icons/newHeart.svg"></a>
+          <a><img src="Icons/newProfile.svg" style="width: 30px;height: 25px;object-fit: scale-down;margin-right: 3px;">  </a>
+  <a> <img style="width: 30px;height: 25px;object-fit: scale-down;" src="Icons/newCart.svg"></a>
               
               <div class="page-wrapper">
                 <div class="page-content">
@@ -625,11 +628,13 @@
 
         </div>
         <!--???? sizes-->
-        <div class="fifth-column">
-            <b>FOLLOW US</b>
-      <p class="social-icons" ><a href="" id="facebook"><i class="fab fa-facebook fa-2x" ></i></a></p>
-      <p class="social-icons" ><a href="https://www.instagram.com/jasonmrad1" target="_blank" id="instagram"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a></p>
-      <p class="social-icons" ><a href="" id="X"><i class="fa-brands fa-x-twitter fa-2x"></i></a></p>
+       <div class="fifth-column">
+            <b>OUR PRIVACY</b>
+            <p><a href="">Terms & Conditions</a></p>
+            <p><a href="">Cookies Settings</a></p>
+            <p><a href="">Privacy Policy</a></p>
+            <p><a href="mailto:jason.mrad.cs@gmail.com">Contact Us</a></p>
+           
   </div>
 
         </div>
@@ -721,23 +726,27 @@
      
       
     </footer> 
-   <div class="after-footer">
+ <div class="after-footer">
           <div class="info-group" >
             <div class="tel-group" >
+              
          
       </div>
           </div>
-          <div class="legal-group" >
+          <div class="legal-group" style="padding-right: 20px;"> 
       <div id="cookie">
-        <p><a href="../Policies/cookies.html" ><i class="fa-brands fa-instagram" style="transform: scale(1.37);"></i>&nbsp;</p></a></div>
+        <p><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram" style="transform: scale(1.37);"></i>&nbsp;</p></a></div>
         <div id="terms">
-       <a href="../Policies/terms&conditions.html" class="links-buttons"> <p><i class="fa-brands fa-x-twitter" style="transform: scale(1.35);"></i>&nbsp;</p></div></a>
+       <a  href="https://X.com" class="links-buttons" target="_blank"> <p><i class="fa-brands fa-x-twitter" style="transform: scale(1.35);"></i>&nbsp;</p></div></a>
         <div id="privacy">
-       <a href="../Policies/privacy-policy.html" class="links-buttons" > <p><i class="fa-brands fa-facebook" style="transform: scale(1.35);"></i></p></div></a>
+       <a  href="https://facebook.com" class="links-buttons" target="_blank"> <p><i class="fa-brands fa-facebook" style="transform: scale(1.35);"></i></p></div></a>
       </div>
       </div>
           
       </div>
+                       <script src="../Javascript/search.js">
+                
+                </script>
    <script>
     var videos;
     if(window.innerWidth>950){
