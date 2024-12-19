@@ -35,7 +35,7 @@
     cursor: pointer;
     text-decoration: none;
   box-shadow:3px 3px #333;
-  transition: background-color 0.2s, color 0.3s; /* Smooth transitions */
+  transition: all 0.3s ease; /* Smooth transitions */
   
   }
   
