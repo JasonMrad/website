@@ -117,6 +117,8 @@ html {
 
   #search::placeholder {
     font-size: 13px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
   }
 
   input#search {
