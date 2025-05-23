@@ -24,7 +24,9 @@ a:link {
     color: white;
 }
 
-
+li a{
+  color: black;
+}
 
 a:hover {
     text-decoration: none;
